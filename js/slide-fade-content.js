@@ -29,6 +29,7 @@ jQuery(document).ready(function($) {
 
 	$('.blog-more').on('click', function() {
 		var href = $(this).attr('href');
+        var page = $(this).attr('page');
 		if ($('#blog-ajax-content').is(':visible')) {
 			$('#blog-ajax-content').css({ display:'block' }).animate({ height:'0' }).empty();
 			$('.blog-close-content').css({ display:'none' });
@@ -37,7 +38,7 @@ jQuery(document).ready(function($) {
 		$('#blog-ajax-content').css({ display:'block' }).animate({ height:'auto' },function() {
 			$('#blog-ajax-content').html('<img id="loader" src="images/loader.gif">');
 			$('#blog-loader').css({ border:'none', position:'relative', top:'24px', left:'48px', boxShadow:'none' }); // http://loadinfo.net/
-			$('#blog-ajax-content').load('blog-extra-content.html ' + href, function() {
+			$('#blog-ajax-content').load(page + href, function() {
 				$('#blog-ajax-content').hide().fadeIn('slow');
 			});			
 			$('.blog-close-content').css({ display:'block' });
