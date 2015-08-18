@@ -290,12 +290,12 @@ $(window).scroll(function() {
 
 google.maps.event.addDomListener(window, 'load', init);
 function init() {	
-	var mainPosition = new google.maps.LatLng(-37.8111, 144.9589);
+	var mainPosition = new google.maps.LatLng(22.54033, 72.943154);
 	var mapOptions = {
 		zoom: 10,
 		scrollwheel: false,
 		disableDefaultUI: true,
-		center: mainPosition, // Melbourne
+		center: mainPosition, // Anand
 		styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off","hue": "#ffffff"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
 	};
 	var mapElement = document.getElementById('map');
@@ -304,12 +304,12 @@ function init() {
 		
 	var contentString =
 		'<div class="map-content">'+
-		'<h3>Our City</h3>'+
-		'<p>Melbourne is the capital and most populous city in the state of Victoria, and the second most populous city in Australia.The name "Melbourne" refers to an urban agglomeration area spanning 9,900 km2 that comprises the greater metropolis – as well as being a common name for its metropolitan hub, the Melbourne City Centre.</p>'+
+		'<h3>Madhuban Resort, Anand, Gujrat</h3>'+
+		'<p>This is a magnificent luxury resort and spa covering 20 acres and is set amidst verdant greenery of Charotar near Anand. It provides modern amenities and luxurious accommodation and promises its guests relaxation, family bonding and rejuvenation. Madhubhan Resort is short drive from Vadodara and Ahmedabad which are connected by short flights from Mumbai or New Delhi.</p>'+
 		'</div>'
 	
 	var image = 'images/marker.png';
-	var myLatLng = new google.maps.LatLng(-37.8300, 144.9610);
+	var myLatLng = new google.maps.LatLng(22.54033, 72.943154);
 	var mapMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
