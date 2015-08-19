@@ -231,11 +231,11 @@ $.widget.bridge('uitooltip', $.ui.tooltip); // Resolve name collision between jQ
 
 /*------------------------------ Preloader ----------------------*/
 
-$(window).load(function() { 
+/*$(window).load(function() { 
 	$('.spinner').fadeOut();
 	$('#preloader').delay(350).fadeOut('slow');
 	$('body').delay(350).css({'overflow':'visible'});
-});
+});*/
 
 /*------------------------------ Collapse the navbar on scroll ----------------------*/
 
